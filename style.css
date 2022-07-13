@@ -24,6 +24,8 @@ h1, p {
 .card-1 {
     padding-top: 100px;
     background-color: black;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .ubi {
@@ -43,4 +45,52 @@ h1, p {
 
 .form-1 {
     margin: 150px;
+}
+
+
+.menu .box-container{
+    display: grid;
+    padding-top: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.menu .box-container .box{
+    padding:5rem;
+    text-align: center;
+    border:white 1px solid;    
+}
+
+.menu .box-container .box img{
+    height: 5rem;
+}
+
+.menu .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding:1rem 0;
+}
+
+.menu .box-container .box .price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding:.5rem 0;
+}
+
+.menu .box-container .box:hover{
+    background:rgba(255, 255, 255, 0.501);
+}
+
+.map-1 {
+    position: relative;
+    padding-top: 56.25%;
+}
+
+.map-1 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

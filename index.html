@@ -4,33 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
+    <title>Williams Coffee</title>
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Link bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
     <header>
-      <nav class="navbar bg-dark navbar-dark">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="images/logo.png" alt="logo">
-          </a>
-            <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Ubicacion">Ubicacion</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="acerca-de.html">Acerca de</a>
-              </li>
-            </ul>
-        </div>
-      </nav>
+        <nav class="navbar navbar-dark bg-dark">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="images/logo.png" alt="logo">
+            </a>
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Ubicacion">Ubicacion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="acerca-de.html">Acerca de</a>
+                </li>
+              </ul>
+          </div>
+        </nav>
       <div class="cover d-flex justify-content-center aling-items-center flex-column">
           <h1>Williams Coffee</h1>
           <p>The best coffee in town</p>
@@ -40,7 +46,7 @@
     <main>
       <section class="card-1">
         <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
+          <div class="col" data-aos="flip-left">
             <div class="card h-100 card text-bg-dark mb-3">
               <img src="images/cafe-1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -49,7 +55,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col" data-aos="flip-left">
             <div class="card h-100 card text-bg-dark mb-3">
               <img src="images/cafe-2.jpg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -58,7 +64,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col" data-aos="flip-left">
             <div class="card h-100 card text-bg-dark mb-3">
               <img src="images/cafe-3.webp" class="card-img-top" alt="...">
               <div class="card-body">
@@ -70,21 +76,63 @@
         </div>
       </section>
 
+      <!-- Section Menu -->
+      <section class="menu" id="Menu" data-aos="flip-left">
+        <h2 class="text-center"> MENU</h2>
+          <div class="box-container">
+              <div class="box">
+                  <img src="images/menu-1.png" alt="">
+                  <h3>Espresso</h3>
+                  <div class="price">$150</div>
+                </div>
+              <div class="box">
+                  <img src="images/menu-2.png" alt="">
+                  <h3>Doble Espresso</h3>
+                  <div class="price">$150</div>
+              </div>
+              <div class="box">
+                  <img src="images/menu-3.png" alt="">
+                  <h3>Americano</h3>
+                  <div class="price">$150</div>
+              </div>
+              <div class="box">
+                  <img src="images/menu-4.png" alt="">
+                  <h3>Flat White</h3>
+                  <div class="price">$150</div>
+              </div>
+              <div class="box">
+                  <img src="images/menu-5.png" alt="">
+                  <h3>Ristretto</h3>
+                  <div class="price">$150</div>
+              </div>
+              <div class="box">
+                  <img src="images/menu-6.png" alt="">
+                  <h3>Lungo</h3>
+                  <div class="price">$150</div>
+              </div>
+          </div>
+      </section> 
+
       <!-- Section Ubicacion -->
-      <section class="ubi">
+      <section class="ubi" data-aos="fade-up">
         <div class="container mt-5 mb-5 text-center" id="Ubicacion">
           <h2>Aqui estamos:</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.034177116171!2d-58.43034698249617!3d-34.578001758309874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59af803ba77%3A0x5023c48f0f873ac7!2sAv.%20Int.%20Bullrich%20599%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1656618585123!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="map-1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.034177116171!2d-58.43034698249617!3d-34.578001758309874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59af803ba77%3A0x5023c48f0f873ac7!2sAv.%20Int.%20Bullrich%20599%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1656618585123!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer>
-
-    </footer>
 
 
 
+
+    <!-- Load AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <!-- Load Js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
